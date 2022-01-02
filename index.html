@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header><i class='bx bx-left-arrow-alt'></i>Weather App</header>
+        <section class="input-box">
+        <p class="info">Error! Enter a valid city name</p>
+        <input type="text" placeholder="Enter the City name" spellcheck="false" required> 
+        <div class="divider"></div>
+        <button>Get the Device Location</button>
+    </section>
+   <section class="weather-info">
+       <img src="/images/partly_cloudy.jpg" alt="weather-icon">
+       <div class="temp">
+           <span class="numb">_</span>
+           <span class="degree">°</span>C
+        </div>
+        <div class="weather">_ _</div>
+        <div class="location">
+            <i class='bx bx-map'></i>
+            <span>_, _</span>
+        </div>
+        <div class="bottom-details">
+            <div class="column feels">
+                <i class='bx bxs-thermometer'></i>
+                <div class="details">
+                    <div class="temp">
+                        <span class="numb-2">_</span>
+                        <span class="degree">°</span>C
+                    </div>
+                        <p>Feels like</p>
+                    </div>
+                </div>
+                <div class="column humidity">
+                    <i class='bx bxs-droplet-half'></i>
+                    <div class="details">
+                        <span>_</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+    <script src="country-list.js"></script>
+</body>
+</html>
